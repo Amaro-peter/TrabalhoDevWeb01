@@ -1,0 +1,360 @@
+body {
+    background-color: rgb(255, 250, 242);
+}
+
+#nav-bar {
+    background-color: rgb(245, 245, 245);
+    border-bottom: 2px solid black;
+}
+  
+
+#nav-bar .navbar-brand img {
+    max-width: 190px;
+    height: auto;
+}
+
+.responsive-svg {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .responsive-svg {
+        max-width: 600px;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    #nav-bar .navbar-brand img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-bar .navbar-brand img {
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav-bar .navbar-brand img {
+        max-width: 145px;
+    }
+}
+
+#nav-bar a {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 350px) {
+    #nav-bar a {
+        font-size: 1.0rem;
+    }
+}
+
+
+#nav-info a:hover {
+    transform: translateY(-3px);
+    color: #444;
+}
+
+#acesso {
+    background-color: rgba(249, 67, 0, 0.6);
+    height: 716px;
+    margin-top: 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+#buttons {
+    justify-content: space-between;
+}
+
+.donor-button {
+    background-color: #FFC3A5;
+    border-radius: 50px;
+    border: none;
+    width: 215px;
+    height: 53px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+
+.donor-button:hover {
+    transform: translateY(-3px);
+    background-color: #ffc0a8;
+}
+
+.ngo-button {
+    background-color: #FFC3A5;
+    border-radius: 50px;
+    border: none;
+    width: 215px;
+    height: 53px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+
+.ngo-button:hover {
+    transform: translateY(-3px);
+    background-color: #ffc0a8;
+}
+
+
+.ellipse-container {
+    width: 660px;
+    height: 582px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 51, 0, 0.95);
+    border-radius: 50%;
+    filter: blur(357px); 
+}
+
+.big-logo {
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    height: auto;
+    z-index: 2;
+}
+
+.content-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    z-index: 2;
+}
+
+.content-area h1 {
+    color: black;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#acesso-mobile-card {
+    background-color: rgba(249, 67, 0, 0.6);
+    margin-top: 61px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;    /* adjust for desired size */
+    height: 220px;   /* adjust for desired size */
+    border-radius: 50%;
+    background: radial-gradient(circle, 
+        rgba(255, 51, 0, 0.95) 0%, 
+        rgba(255, 51, 0, 0.6) 50%, 
+        rgba(255, 51, 0, 0) 100%);
+    filter: blur(80px);  /* adjusted blur value */
+    z-index: 0;
+    pointer-events: none;
+}
+
+#acesso-mobile-card .card-body {
+    position: relative;
+    z-index: 10 !important;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#id-accordion .card-header {
+    background-color: rgb(255, 219, 175);
+    color: black !important;
+    border: 2px solid black !important;
+    border-bottom: 3px solid black !important;
+}
+
+#id-accordion .card-header h5,
+#id-accordion .card-header a {
+    color: black !important;
+}
+
+#id-accordion .card-body {
+    background-color: rgb(245, 240, 234);
+    color: black !important;
+    border: 1px solid black;
+}
+
+#id-accordion .alert-info {
+    background-color: antiquewhite;
+    color: black !important;
+    border-color: #c54708 !important;;
+}
+
+#id-accordion .alert-info .alert-heading,
+#id-accordion .alert-info .alert-link {
+    color: #c54708 !important;
+}
+
+.accordion .card:last-child .card-header {
+    border-bottom: 1px solid black !important;
+}
+
+.accordion .card .collapse:not(.show) {
+    border-top: none;
+}
+
+.accordion .card {
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: rgb(255, 250, 242);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #003366 !important;
+}
+
+.footer a:hover {
+    color: #001f4d;
+}
+
+.toast {
+    border: 2px solid black !important;
+}
+
+.toast-header {
+    color: #c54708 !important;
+}
+
+.toast-body {
+    color: black !important;
+}
+
+@media (max-width: 1400px) {
+    .content-area h1 {
+        font-size: 2.6rem;
+    }
+    .big-logo {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content-area h1 {
+        font-size: 2.4rem;
+    }
+     .big-logo {
+        max-width: 410px;
+        top: 35%;
+    }
+    .content-area {
+        top: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-area h1 {
+        font-size: 2.2rem;
+    }
+    .big-logo {
+        max-width: 390px;
+        top: 35%;
+    }
+    .content-area {
+        top: 50%;
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-area h1 {
+        font-size: 2rem;
+    }
+     .big-logo {
+        max-width: 350px;
+        top: 40%;
+    }
+     .content-area {
+        top: 50%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-area h1 {
+        font-size: 1.8rem;
+    }
+    .big-logo {
+        max-width: 305px;
+        top: 40%;
+    }
+    .content-area {
+        top: 50%;
+        width: 90%;
+    }
+    #acesso {
+        height: 600px;
+    }
+}
+
+@media (max-width: 468px) {
+    .content-area h1 {
+        font-size: 1.5rem;
+    }
+    .big-logo {
+        max-width: 305px;
+        top: 43%;
+    }
+    .content-area {
+        top: 50%;
+        width: 90%;
+    }
+    #acesso {
+        height: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .accordion {
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

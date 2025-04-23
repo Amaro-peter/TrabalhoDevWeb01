@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>Guia do projeto social</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top" id="nav-bar">
+        <div class="container">
+           <a class="navbar-brand" href="#">
+              <img src="assets/images/image 4.svg" alt="Mission App Logo">
+           </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" 
+              aria-expanded="false" aria-label="Botão de navegação">
+              <i class="fas fa-bars" font-size="font-size:1.5rem; color:black;"></i>
+           </button>
+           <div class="collapse navbar-collapse" id="menu">
+              <div class="navbar-nav mx-auto" id="nav-info">
+                 <a class="nav-item nav-link" href="index.html">Quem somos</a>
+                 <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Documentação</a>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="guiaDoDesenvolvedor.html">Guia do desenvolvedor</a>
+                       <a class="dropdown-item" href="#">Guia do projeto social</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Juntos+</a>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="juntosmais.html">O que é?</a>
+                       <a class="dropdown-item" href="#">Doador</a>
+                       <a class="dropdown-item" href="#">Projeto social</a>
+                    </div>
+                 </div>
+                 <a class="nav-item nav-link" href="#">Dúvidas</a>
+                 <a class="nav-item nav-link" href="#contatomodal" data-toggle="modal">Contato</a>
+              </div>
+           </div>
+        </div>
+    </nav> 
+
+    <div class="container-fluid py-5 w-100" style="background-color: antiquewhite; margin-top: 64px;">
+        <div class="container">
+    
+            <section id="titulo" class="mb-5">
+                <div class="card shadow-sm" style="border: 2px solid black;">
+                    <div class="card-body text-center py-5">
+                        <h3 style="color: #c54708;" class="mb-3">Guia do Projeto Social</h3>
+                        <p class="fw-bold fs-4">Descubra como o Mission App pode transformar o impacto de organizações sem fins lucrativos por meio da tecnologia.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="sobre" class="mb-5">
+                <div class="card shadow-sm" style="border: 2px solid black;">
+                    <div class="card-header">
+                        <h3 style="color: #c54708;" class="mb-0">O que é o Mission App?</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold fs-5">
+                            O Mission App pode impulsionar o impacto de ONGs e iniciativas sociais ao oferecer uma plataforma digital que facilita o engajamento com causas sociais. Através da conexão entre usuários e projetos locais, o app incentiva a participação ativa em ações comunitárias e torna mais simples o acompanhamento e fidelização de voluntários e doadores
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+
+            <section id="impacto" class="mb-5">
+                <div class="card shadow-sm" style="border: 2px solid black;">
+                    <div class="card-header">
+                        <h3 style="color: #c54708;" class="mb-0">Impacto para ONGs e Organizações Sociais</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold fs-5">O Mission App pode potencializar o alcance de ONGs ao fornecer uma plataforma digital para registrar decisões por Cristo, conectar usuários a igrejas locais e automatizar o envio de mensagens e acompanhamento pastoral. Isso amplia a capacidade de atuação com poucos recursos e fortalece a rede de apoio espiritual.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="setup" class="mb-5">
+                <div class="card shadow-sm" style="border: 2px solid black;">
+                    <div class="card-header">
+                        <h3 style="color: #c54708;" class="mb-0">Como configurar o Mission App</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold fs-5">Para configurar a aplicação web, é necessário:</p>
+                        <ul class="fw-bold fs-5">
+                            <li>Clonar o repositório GitHub</li>
+                            <li>Instalar as dependências com <code>npm install</code></li>
+                            <li>Configurar variáveis de ambiente (.env)</li>
+                            <li>Executar o frontend e backend localmente com <code>npm start</code> ou <code>firebase emulators:start</code></li>
+                        </ul>
+                        <p class="fw-bold fs-5">
+                            Caso a sua organização não tenha alguém de TI para colocar o aplicativo no ar,
+                             contamos com um grupo de voluntários que podem ajudar - 
+                            <a href="" class="alert-link" style="color: #c54708;">
+                                preencha o formulário para entrar em contato
+                            </a>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="custos" class="mb-5">
+                <div class="card shadow-sm" style="border: 2px solid black;">
+                    <div class="card-header">
+                        <h3 style="color: #c54708;" class="mb-0">Custos para Manter um Web App</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold fs-5">Manter um aplicativo web envolve custos como:</p>
+                        <ul class="fw-bold fs-5">
+                            <li>Hospedagem (ex: Firebase, Vercel, AWS)</li>
+                            <li>Domínio personalizado</li>
+                            <li>Serviços de e-mail e autenticação</li>
+                            <li>Manutenção técnica e atualizações de segurança</li>
+                        </ul>
+                        <p class="fw-bold fs-5">Caso não queira ter nenhum custo adicional, participe da Juntos+, a mesma plataforma do Mission App compartilhada por milhares de instituições. <a href="juntosmais.html" class="alert-link" style="color: #c54708;">Saiba mais aqui!</a></p>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-6">
+                 <h5>
+                    Links
+                 </h5>
+                 <ul class="list-unstyled">
+                    <li>
+                       <a href="#">Quem somos</a>
+                    </li>
+                    <li>
+                       <a href="#">Guia do desenvolvedor</a>
+                    </li>
+                    <li>
+                       <a href="#">Guia do projeto social</a>
+                    </li>
+                    <li>
+                       <a href="#">Juntos+</a>
+                    </li>
+                    <li>
+                       <a href="#">Dúvidas</a>
+                    </li>
+                 </ul>
+              </div>
+  
+              <div class="col-lg-6">
+                 <h5>
+                    Informações de contato
+                 </h5>
+                 <ul class="list-unstyled">
+                    <li>
+                       <i class="fas fa-university"></i> Fundação Mission App
+                    </li>
+                    <li>
+                       <i class="fas fa-phone"></i> +55 11 99999-9999
+                    </li>
+                    <li>
+                       <i class="fas fa-envelope"></i>
+                       <a href="mailto:">
+                          contato@missionapp.com.br
+                       </a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Mission app</title>
+</head>
+
+<body>
+
+   <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top" id="nav-bar">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/image 4.svg" alt="Mission App Logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" 
+            aria-expanded="false" aria-label="Botão de navegação">
+            <i class="fas fa-bars" font-size="font-size:1.5rem; color:black;"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mx-auto" id="nav-info">
+               <a class="nav-item nav-link" href="index.html">Quem somos</a>
+               <div class="dropdown">
+                  <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Documentação</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="guiaDoDesenvolvedor.html">Guia do desenvolvedor</a>
+                     <a class="dropdown-item" href="guiaDoProjetoSocial.html">Guia do projeto social</a>
+                  </div>
+               </div>
+               <div class="dropdown">
+                  <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Juntos+</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="juntosmais.html">O que é?</a>
+                     <a class="dropdown-item" href="#">Doador</a>
+                     <a class="dropdown-item" href="#">Projeto social</a>
+                  </div>
+               </div>
+               <a class="nav-item nav-link" href="#">Dúvidas</a>
+               <a class="nav-item nav-link" href="#contatomodal" data-toggle="modal">Contato</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <div class="modal fade" id="contatomodal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="modal-title">Informações de contato</span>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Insira seus dados</legend>
+
+                     <div class="form-group row">
+                        <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
+                        </div>
+                     </div>
+
+                     <div class="form-group row">
+                        <label for="email" class="col-form-label col-lg-2">Email</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+                        </div>
+                     </div>
+
+                     <div class="form-group row">
+                        <label for="org" class="col-form-label col-lg-2">Organização</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control" placeholder="Organização" id="org" name="org">
+                        </div>
+                     </div>
+
+                     <div class="form-group row">
+                        <label for="phone" class="col-form-label col-lg-2">
+                           Telefone
+                        </label>
+                        <div class="col-lg-10">
+                           <div class="input-group">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="phone-addon">
+                                    +55
+                                 </span>
+                              </div>
+                              <input type="text" 
+                                 class="form-control" 
+                                 id="phone" 
+                                 name="phone" 
+                                 placeholder="Seu número" 
+                                 aria-describedby="phone-addon" 
+                                 data-toggle="tooltip" 
+                                 data-placement="bottom"
+                                 title="Inclua seu código de área sem espaços ou traços."
+                              >
+                           </div>
+                        </div>
+                     </div>
+                  </fieldset>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary">
+                  Enviar
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid d-none d-md-block mb-0" id="acesso">
+      <div class="ellipse-container">
+         <div class="ellipse">    
+         </div>
+         <img src="assets/images/image 4.svg" alt="Mission App Logo" class="big-logo">
+         <div class="content-area">
+            <h1>Juntos+</h1>
+            <div class="row" id="buttons">
+               <button type="button" class="donor-button">
+                  <i class="fas fa-gift"></i> Doador
+               </button>
+               <button type="button" class="ngo-button">
+                  <i class="fas fa-university"></i> Projeto social
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid px-0 d-block d-md-none mb-0" id="acesso-mobile">
+      <div class="card text-center w-100" id="acesso-mobile-card">
+         <div class="bg-effect"></div>
+         <div class="card-body d-flex flex-column justify-content-center align-items-center" style="gap: 5px;">
+            <h4 class="card-title mb-0" style="color: black; font-weight: bold;">
+               Código aberto para projetos sociais.
+            </h4>
+            <h5 class="card-title mb-0" style="color: black; font-weight: bold;">
+               Juntos+
+            </h5>
+            <div class="d-flex flex-column align-items-center">
+               <button type="button" class="donor-button">
+                  <i class="fas fa-gift"></i> Doador
+               </button>
+               <button type="button" class="ngo-button">
+                  <i class="fas fa-university"></i> Projeto social
+               </button>
+            </div>
+         </div>
+      </div> 
+   </div>   
+   
+   <div class="card mb-0" style="background-color: antiquewhite;">
+      <div class="card-body align-items-center">
+         <div class="text-center">
+            <h2 class="card-title" style="color: #c54708; justify-content: center;">
+               Nossa Missão
+            </h2>
+         </div>
+         <p class="card-text text-justified text-center" style="font-weight: bold; font-size: 1.5rem;">
+            O Mission App é uma plataforma de código aberto feita para apoiar organizações na divulgação de projetos sociais e na conexão com o público. 
+         </p>
+      </div>
+
+      <img src="assets/images/cover.svg" alt="Todos os povos" class="img-fluid responsive-svg mx-auto d-block mb-3">
+
+      <div class="card-body align-items-center">
+         <div class="text-center">
+            <h2 class="card-title" style="color: #c54708; justify-content: center;">
+               O que é o aplicativo?
+            </h2>
+         </div>
+         <p class="card-text text-justified text-center" style="font-weight: bold; font-size: 1.5rem;">
+            A plataforma permite a conexão de pessoas com projetos sociais. Organizações podem divulgar suas iniciativas com fotos inspiradoras, engajar o público, 
+            receber doações e organizar eventos de caridade com facilidade.
+         </p>
+      </div>
+
+      <div id="carousel-id" class="carousel slide carousel-slide mb-3" data-ride="carousel" data-interval="3000" style="padding-bottom: 50px;">
+         <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-id" data-slide-to="1"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="d-flex justify-content-center">
+                   <img src="assets/images/Captura de ecrã 2025-04-22 120452 1.png" alt="Login do Mission App" 
+                        class="img-fluid clickable-image" style="max-height: 600px; object-fit: cover;">
+               </div>
+            </div>
+   
+            <div class="carousel-item">
+               <div class="d-flex justify-content-center">
+                  <img src="assets/images/Captura de ecrã 2025-04-22 141715 1.png" alt="Slide image" 
+                        class="img-fluid clickable-image" style="max-height: 600px; object-fit: cover;">
+               </div>
+            </div>
+         </div>
+
+         <a href="#carousel-id" class="carousel-control-prev d-none d-lg-block" role="button" data-slide="prev">
+            <span aria-hidden="true">
+               <span class="sr-only">Anterior</span>
+               <i class="fas fa-chevron-left fa-2x text-dark"></i>
+            </span>
+         </a>
+
+         <a href="#carousel-id" class="carousel-control-next d-none d-lg-block" role="button" data-slide="next">
+            <span aria-hidden="true">
+               <span class="sr-only">Anterior</span>
+               <i class="fas fa-chevron-right fa-2x text-dark"></i>
+            </span>
+         </a>
+      </div>
+
+      <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered col-form-label">
+            <div class="modal-content bg-transparent border-0">
+               <button type="button" class="close text-dark position-absolute" style="right: 15px; top: 15px;" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+               <img src="" id="modalImage" class="img-fluid mx-auto d-block"> 
+            </div>
+         </div>
+      </div>
+
+      <div class="card-body align-items-center mb-1">
+         <div class="text-center">
+            <h2 class="card-title" style="color: #c54708; justify-content: center;">
+               Perguntas frequentes
+            </h2>
+         </div>
+      </div>
+
+      <div class="accordion mb-5" id="id-accordion">
+         <div class="card mb-0">
+            <div class="card-header" id="id-header-gratuidade">
+               <h5 class="mb-0">
+                  <a href="#id-gratuidade" data-toggle="collapse" aria-expanded="true" aria-controls="id-gratuidade">
+                     O aplicativo é gratuito?
+                  </a>
+               </h5>
+            </div>
+            <div id="id-gratuidade" class="collapse show" data-parent="#id-accordion">
+               <div class="card-body">
+                  <p>
+                     Sim, o código-fonte do aplicativo é totalmente gratuito para organizações e doadores. 
+                     Acreditamos que a solidariedade não deve ter custo.
+                  </p>
+
+                  <div class="alert alert-info alert-dismissible fade show">
+                     <h4 class="alert-heading">
+                        Atenção!
+                     </h4>
+                     <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                        <i class="fas fa-times-circle"></i>
+                     </button>
+                     <p class="text-justify">
+                        O código-fonte deste projeto é gratuito.
+                        No entanto, manter o site no ar envolve custos com servidores, armazenamento e outros.
+                     </p>
+                     <a href="#" class="alert-link">Saiba mais sobre custos na nossa página Guia do Projeto Social.</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="card mb-0">
+            <div class="card-header" id="id-header-instalar">
+               <h5 class="mb-0">
+                  <a href="#id-instalar" data-toggle="collapse" aria-expanded="true" aria-controls="id-instalar">
+                     Como usar o aplicativo web?
+                  </a>
+               </h5>
+            </div>
+            <div id="id-instalar" class="collapse" data-parent="#id-accordion" aria-labelledby="id-header-instalar">
+               <div class="card-body">
+                  <p class="text-justify">
+                     Para que o app funcione online, é necessário hospedá-lo em um servidor. 
+                     Esse processo envolve configurar o ambiente, publicar o código e manter o site no ar.
+                  </p>
+                  
+                  <p class="text-justify">
+                     Disponibilizamos um <a href="#" class="alert-link" style="color: #c54708;">Guia do Desenvolvedor</a> com o passo a passo.
+                     Sua organização pode contar com voluntários para ajudar — <a href="" class="alert-link" style="color: #c54708;">basta preencher este formulário</a>.
+                  </p>
+
+                  <p class="text-justify">
+                     Ou, se preferir, participe da Juntos+. <a href="" class="alert-link" style="color: #c54708;">Saiba mais aqui</a>.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="card mb-0">
+            <div class="card-header" id="id-header-iniciativa">
+               <h5 class="mb-0">
+                  <a href="#id-iniciativa" data-toggle="collapse" aria-expanded="true" aria-controls="id-iniciativa">
+                     O que é o Juntos+?
+                  </a>
+               </h5>
+            </div>
+            <div id="id-iniciativa" class="collapse" data-parent="#id-accordion" aria-labelledby="id-header-iniciativa">
+               <div class="card-body">
+                  <p class="text-justify">
+                     O Juntos+ é a plataforma Mission App compartilhada por milhares de instituições comprometidas com o bem comum. 
+                  </p>
+                  
+                  <p class="text-justify">
+                     A iniciativa conta com uma equipe dedicada de profissionais, responsável por organizar e divulgar campanhas de caridade ao longo do ano, 
+                     abordando diferentes causas e necessidades sociais — como ações solidárias no Natal, apoio a desabrigados, combate à fome, entre outras.
+                  </p>
+
+                  <p class="text-justify">
+                     Ao participar, sua organização se conecta a uma rede confiável. Não há custos para se juntar ao Juntos+. 
+                     <a href="" class="alert-link" style="color: #c54708;">Saiba mais aqui</a>.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div aria-live="polite" aria-atomic="true" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 1080;">
+      <div class="toast w-auto" data-delay="15000" style="min-width: 300px;">
+         <div class="toast-header">
+            <strong class="mr-auto">Atenção</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-labelledby="Fechar">
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="toast-body">
+            Para participar, a organização deve passar por um processo de análise e diligência, 
+            garantindo o alinhamento com os critérios e a transparência das informações.
+         </div>
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <h5>
+                  Links
+               </h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <a href="#">Quem somos</a>
+                  </li>
+                  <li>
+                     <a href="#">Guia do desenvolvedor</a>
+                  </li>
+                  <li>
+                     <a href="#">Guia do projeto social</a>
+                  </li>
+                  <li>
+                     <a href="#">Juntos+</a>
+                  </li>
+                  <li>
+                     <a href="#">Dúvidas</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="col-lg-6">
+               <h5>
+                  Informações de contato
+               </h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <i class="fas fa-university"></i> Fundação Mission App
+                  </li>
+                  <li>
+                     <i class="fas fa-phone"></i> +55 11 99999-9999
+                  </li>
+                  <li>
+                     <i class="fas fa-envelope"></i>
+                     <a href="mailto:">
+                        contato@missionapp.com.br
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
