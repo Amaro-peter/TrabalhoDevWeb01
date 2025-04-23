@@ -42,7 +42,78 @@
               </div>
            </div>
         </div>
-    </nav> 
+     </nav>
+  
+     <div class="modal fade" id="contatomodal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+           <div class="modal-content">
+              <div class="modal-header">
+                 <span class="modal-title">Informações de contato</span>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+              </div>
+              <div class="modal-body">
+                 <form action="">
+                    <fieldset class="form-group">
+                       <legend class="font-weight-bold">Insira seus dados</legend>
+  
+                       <div class="form-group row">
+                          <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                          <div class="col-lg-10">
+                             <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
+                          </div>
+                       </div>
+  
+                       <div class="form-group row">
+                          <label for="email" class="col-form-label col-lg-2">Email</label>
+                          <div class="col-lg-10">
+                             <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+                          </div>
+                       </div>
+  
+                       <div class="form-group row">
+                          <label for="org" class="col-form-label col-lg-2">Organização</label>
+                          <div class="col-lg-10">
+                             <input type="text" class="form-control" placeholder="Organização" id="org" name="org">
+                          </div>
+                       </div>
+  
+                       <div class="form-group row">
+                          <label for="phone" class="col-form-label col-lg-2">
+                             Telefone
+                          </label>
+                          <div class="col-lg-10">
+                             <div class="input-group">
+                                <div class="input-group-prepend">
+                                   <span class="input-group-text" id="phone-addon">
+                                      +55
+                                   </span>
+                                </div>
+                                <input type="text" 
+                                   class="form-control" 
+                                   id="phone" 
+                                   name="phone" 
+                                   placeholder="Seu número" 
+                                   aria-describedby="phone-addon" 
+                                   data-toggle="tooltip" 
+                                   data-placement="bottom"
+                                   title="Inclua seu código de área sem espaços ou traços."
+                                >
+                             </div>
+                          </div>
+                       </div>
+                    </fieldset>
+                 </form>
+              </div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-primary">
+                    Enviar
+                 </button>
+              </div>
+           </div>
+        </div>
+    </div> 
 
     <div class="container-fluid py-5 w-100" style="background-color: antiquewhite; margin-top: 64px;">
         <div class="container">
