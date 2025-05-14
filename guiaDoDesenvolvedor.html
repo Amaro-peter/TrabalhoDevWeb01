@@ -1,257 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/all.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <title>Guia do desenvolvedor</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Guia do desenvolvedor</title>
 </head>
-<body>
 
-    <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top" id="nav-bar">
-        <div class="container">
-           <a class="navbar-brand" href="#">
-              <img src="assets/images/image 4.svg" alt="Mission App Logo">
-           </a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" 
-              aria-expanded="false" aria-label="Botão de navegação">
-              <i class="fas fa-bars" font-size="font-size:1.5rem; color:black;"></i>
-           </button>
-           <div class="collapse navbar-collapse" id="menu">
-              <div class="navbar-nav mx-auto" id="nav-info">
-                 <a class="nav-item nav-link" href="index.html">Quem somos</a>
-                 <div class="dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Documentação</a>
-                    <div class="dropdown-menu">
-                       <a class="dropdown-item" href="guiaDoDesenvolvedor.html">Guia do desenvolvedor</a>
-                       <a class="dropdown-item" href="guiaDoProjetoSocial.html">Guia do projeto social</a>
-                    </div>
-                 </div>
-                 <div class="dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Juntos+</a>
-                    <div class="dropdown-menu">
-                       <a class="dropdown-item" href="juntosmais.html">O que é?</a>
-                       <a class="dropdown-item" href="#">Doador</a>
-                       <a class="dropdown-item" href="#">Projeto social</a>
-                    </div>
-                 </div>
-                 <a class="nav-item nav-link" href="#">Dúvidas</a>
-                 <a class="nav-item nav-link" href="#contatomodal" data-toggle="modal">Contato</a>
-              </div>
-           </div>
-        </div>
-     </nav>
-  
-     <div class="modal fade" id="contatomodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-           <div class="modal-content">
-              <div class="modal-header">
-                 <span class="modal-title">Informações de contato</span>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                 </button>
-              </div>
-              <div class="modal-body">
-                 <form action="">
-                    <fieldset class="form-group">
-                       <legend class="font-weight-bold">Insira seus dados</legend>
-  
-                       <div class="form-group row">
-                          <label for="nome" class="col-form-label col-lg-2">Nome</label>
-                          <div class="col-lg-10">
-                             <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
-                          </div>
-                       </div>
-  
-                       <div class="form-group row">
-                          <label for="email" class="col-form-label col-lg-2">Email</label>
-                          <div class="col-lg-10">
-                             <input type="text" class="form-control" placeholder="Email" id="email" name="email">
-                          </div>
-                       </div>
-  
-                       <div class="form-group row">
-                          <label for="org" class="col-form-label col-lg-2">Organização</label>
-                          <div class="col-lg-10">
-                             <input type="text" class="form-control" placeholder="Organização" id="org" name="org">
-                          </div>
-                       </div>
-  
-                       <div class="form-group row">
-                          <label for="phone" class="col-form-label col-lg-2">
-                             Telefone
-                          </label>
-                          <div class="col-lg-10">
-                             <div class="input-group">
-                                <div class="input-group-prepend">
-                                   <span class="input-group-text" id="phone-addon">
-                                      +55
-                                   </span>
-                                </div>
-                                <input type="text" 
-                                   class="form-control" 
-                                   id="phone" 
-                                   name="phone" 
-                                   placeholder="Seu número" 
-                                   aria-describedby="phone-addon" 
-                                   data-toggle="tooltip" 
-                                   data-placement="bottom"
-                                   title="Inclua seu código de área sem espaços ou traços."
-                                >
-                             </div>
-                          </div>
-                       </div>
-                    </fieldset>
-                 </form>
-              </div>
-              <div class="modal-footer">
-                 <button type="button" class="btn btn-primary">
-                    Enviar
-                 </button>
-              </div>
-           </div>
-        </div>
-    </div> 
+<body style="padding-top: 80px;">
 
-    <div class="container-fluid py-5 w-100" style="background-color: antiquewhite; margin-top: 64px;">
-        <div class="container">
-            <section id="overview" class="mb-5">
-            <div class="card shadow-sm" style="border: 2px solid black;">
-                <div class="card-body text-center py-5">
-                <h2 style="color: #c54708;" class="mb-3">Guia do Desenvolvedor</h2>
-                <p class="fw-bold fs-4">Este guia é destinado a desenvolvedores que desejam contribuir para o projeto ou entender melhor como ele funciona.</p>
-                </div>
+   <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top" id="nav-bar">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/image 4.svg" alt="Mission App Logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Botão de navegação">
+            <i class="fas fa-bars" font-size="font-size:1.5rem; color:black;"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mx-auto" id="nav-info">
+               <a class="nav-item nav-link" href="index.html">Quem somos</a>
+               <div class="dropdown">
+                  <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Documentação</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="guiaDoDesenvolvedor.html">Guia do desenvolvedor</a>
+                     <a class="dropdown-item" href="guiaDoProjetoSocial.html">Guia do projeto social</a>
+                  </div>
+               </div>
+               <div class="dropdown">
+                  <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Juntos+</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="juntosmais.html">O que é?</a>
+                     <a class="dropdown-item" href="#">Doador</a>
+                     <a class="dropdown-item" href="#">Projeto social</a>
+                  </div>
+               </div>
+               <a class="nav-item nav-link" href="#">Dúvidas</a>
+               <a class="nav-item nav-link" href="#contatomodal" data-toggle="modal">Contato</a>
             </div>
-            </section>
-        
-            <section id="contribuir" class="mb-5">
-            <div class="card shadow-sm" style="border: 2px solid black;">
-                <div class="card-header">
-                <h2 style="color: #c54708;" class="mb-0">Contribuindo para o projeto</h2>
-                </div>
-                <div class="card-body">
-                <p class="fw-bold fs-5">Se você deseja contribuir para o projeto, siga estas etapas:</p>
-                <ol class="fw-bold fs-5">
-                    <li>Faça um fork do repositório no GitHub.</li>
-                    <li>Crie uma branch para sua feature ou correção de bug.</li>
-                    <li>Faça suas alterações e commit.</li>
-                    <li>Envie um pull request para o repositório original.</li>
-                </ol>
-                </div>
+         </div>
+      </div>
+   </nav>
+
+   <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-light px-3 py-2">
+         <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+         <li class="breadcrumb-item active" aria-current="page">Guia do Desenvolvedor</li>
+      </ol>
+   </nav>
+
+   <div class="modal fade" id="contatomodal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="modal-title">Informações de contato</span>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+               </button>
             </div>
-            </section>
-        
-            <section id="estrutura" class="mb-5">
-            <div class="card shadow-sm" style="border: 2px solid black;">
-                <div class="card-header">
-                <h2 style="color: #c54708;" class="mb-0">Estrutura do Projeto</h2>
-                </div>
-                <div class="card-body">
-                <p class="fw-bold fs-5">A estrutura do projeto é organizada da seguinte forma:</p>
-                <ul class="fw-bold fs-5">
-                    <li><code>src/</code>: Código-fonte do projeto.</li>
-                    <li><code>public/</code>: Arquivos estáticos e HTML principal.</li>
-                    <li><code>tests/</code>: Testes automatizados.</li>
-                    <li><code>docs/</code>: Documentação do projeto.</li>
-                </ul>
-                </div>
+            <div class="modal-body">
+               <form action="">
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Insira seus dados</legend>
+
+                     <div class="form-group row">
+                        <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
+                        </div>
+                     </div>
+
+                     <div class="form-group row">
+                        <label for="email" class="col-form-label col-lg-2">Email</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+                        </div>
+                     </div>
+
+                     <div class="form-group row">
+                        <label for="org" class="col-form-label col-lg-2">Organização</label>
+                        <div class="col-lg-10">
+                           <input type="text" class="form-control" placeholder="Organização" id="org" name="org">
+                        </div>
+                     </div>
+
+                     <div class="form-group row">
+                        <label for="phone" class="col-form-label col-lg-2">
+                           Telefone
+                        </label>
+                        <div class="col-lg-10">
+                           <div class="input-group">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="phone-addon">
+                                    +55
+                                 </span>
+                              </div>
+                              <input type="text" class="form-control" id="phone" name="phone" placeholder="Seu número"
+                                 aria-describedby="phone-addon" data-toggle="tooltip" data-placement="bottom"
+                                 title="Inclua seu código de área sem espaços ou traços.">
+                           </div>
+                        </div>
+                     </div>
+                  </fieldset>
+               </form>
             </div>
-            </section>
-        
-            <section id="tecnologia">
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary">
+                  Enviar
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid py-5 w-100" style="background-color: antiquewhite; margin-top: 64px;">
+      <div class="container">
+         <section id="overview" class="mb-5">
+            <div class="card shadow-sm" style="border: 2px solid black;">
+               <div class="card-body text-center py-5">
+                  <h2 style="color: #c54708;" class="mb-3">Guia do Desenvolvedor</h2>
+                  <p class="fw-bold fs-4">Este guia é destinado a desenvolvedores que desejam contribuir para o projeto
+                     ou entender melhor como ele funciona.</p>
+               </div>
+            </div>
+         </section>
+
+         <section id="contribuir" class="mb-5">
+            <div class="card shadow-sm" style="border: 2px solid black;">
+               <div class="card-header">
+                  <h2 style="color: #c54708;" class="mb-0">Contribuindo para o projeto</h2>
+               </div>
+               <div class="card-body">
+                  <p class="fw-bold fs-5">Se você deseja contribuir para o projeto, siga estas etapas:</p>
+                  <ol class="fw-bold fs-5">
+                     <li>
+                        Faça um fork do repositório no GitHub.
+                        <div class="ml-3">
+                           Se deseja utilizar o GitHub Desktop, faça o download aqui:
+                           <a href="https://desktop.github.com/" target="_blank" class="badge badge-dark">
+                              Download GitHub
+                           </a>
+                        </div>
+                     </li>
+                     <li>Crie uma branch para sua feature ou correção de bug.</li>
+                     <li>Faça suas alterações e commit.</li>
+                     <li>Envie um pull request para o repositório original.</li>
+                  </ol>
+               </div>
+            </div>
+         </section>
+
+         <section id="estrutura" class="mb-5">
+            <div class="card shadow-sm" style="border: 2px solid black;">
+               <div class="card-header">
+                  <h2 style="color: #c54708;" class="mb-0">Estrutura do Projeto</h2>
+               </div>
+               <div class="card-body">
+                  <p class="fw-bold fs-5">A estrutura do projeto é organizada da seguinte forma:</p>
+                  <ul class="fw-bold fs-5">
+                     <li><code>src/</code>: Código-fonte do projeto.</li>
+                     <li><code>public/</code>: Arquivos estáticos e HTML principal.</li>
+                     <li><code>tests/</code>: Testes automatizados.</li>
+                     <li><code>docs/</code>: Documentação do projeto.</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+         <section id="tecnologia">
             <h2 style="color: #c54708;" class="mb-4">Stack Tecnológico</h2>
             <div class="row">
-                
-                <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm" style="border: 2px solid black;">
-                    <div class="card-header">
-                    <h3 style="color: #c54708;" class="mb-0">Frontend</h3>
-                    </div>
-                    <div class="card-body">
-                    <p>Desenvolvido em <strong>React</strong> com <strong>Chakra UI</strong> para componentes acessíveis e tema customizável.</p>
-                    <ul>
-                        <li><code>src/components/</code>: Componentes reutilizáveis (Botões, Formulários, Cards).</li>
-                        <li><code>src/pages/</code>: Páginas do React Router (Home, Perfil, Ajuda).</li>
-                        <li><code>src/theme/</code>: Extensões de tema do Chakra (cores, fontes, espaçamentos).</li>
-                    </ul>
-                    </div>
-                </div>
-                </div>
-    
-                <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm" style="border: 2px solid black;">
-                    <div class="card-header">
-                    <h3 style="color: #c54708;" class="mb-0">Backend</h3>
-                    </div>
-                    <div class="card-body">
-                    <p>API server em <strong>Node.js</strong> com <strong>Express</strong>, integrado ao <strong>Firebase</strong> para autenticação e banco de dados em tempo real.</p>
-                    <ul>
-                        <li><code>functions/</code>: Firebase Cloud Functions para lógica de backend.</li>
-                        <li><code>firebase.json</code>: Configurações do projeto Firebase.</li>
-                        <li><code>firestore.rules</code>: Regras de segurança do Firestore.</li>
-                    </ul>
-                    </div>
-                </div>
-                </div>
+
+               <div class="col-md-6 mb-4">
+                  <div class="card h-100 shadow-sm" style="border: 2px solid black;">
+                     <div class="card-header">
+                        <h3 style="color: #c54708;" class="mb-0">Frontend</h3>
+                     </div>
+                     <div class="card-body">
+                        <p>Desenvolvido em <strong>React</strong> com <strong>Chakra UI</strong> para componentes
+                           acessíveis e tema customizável.</p>
+                        <ul>
+                           <li><code>src/components/</code>: Componentes reutilizáveis (Botões, Formulários, Cards).
+                           </li>
+                           <li><code>src/pages/</code>: Páginas do React Router (Home, Perfil, Ajuda).</li>
+                           <li><code>src/theme/</code>: Extensões de tema do Chakra (cores, fontes, espaçamentos).</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-6 mb-4">
+                  <div class="card h-100 shadow-sm" style="border: 2px solid black;">
+                     <div class="card-header">
+                        <h3 style="color: #c54708;" class="mb-0">Backend</h3>
+                     </div>
+                     <div class="card-body">
+                        <p>API server em <strong>Node.js</strong> com <strong>Express</strong>, integrado ao
+                           <strong>Firebase</strong> para autenticação e banco de dados em tempo real.</p>
+                        <ul>
+                           <li><code>functions/</code>: Firebase Cloud Functions para lógica de backend.</li>
+                           <li><code>firebase.json</code>: Configurações do projeto Firebase.</li>
+                           <li><code>firestore.rules</code>: Regras de segurança do Firestore.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-            </section>
-        </div>
-    </div>
+         </section>
+      </div>
+   </div>
 
-    <footer class="footer">
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-6">
-                 <h5>
-                    Links
-                 </h5>
-                 <ul class="list-unstyled">
-                    <li>
-                       <a href="#">Quem somos</a>
-                    </li>
-                    <li>
-                       <a href="#">Guia do desenvolvedor</a>
-                    </li>
-                    <li>
-                       <a href="#">Guia do projeto social</a>
-                    </li>
-                    <li>
-                       <a href="#">Juntos+</a>
-                    </li>
-                    <li>
-                       <a href="#">Dúvidas</a>
-                    </li>
-                 </ul>
-              </div>
-  
-              <div class="col-lg-6">
-                 <h5>
-                    Informações de contato
-                 </h5>
-                 <ul class="list-unstyled">
-                    <li>
-                       <i class="fas fa-university"></i> Fundação Mission App
-                    </li>
-                    <li>
-                       <i class="fas fa-phone"></i> +55 11 99999-9999
-                    </li>
-                    <li>
-                       <i class="fas fa-envelope"></i>
-                       <a href="mailto:">
-                          contato@missionapp.com.br
-                       </a>
-                    </li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-    </footer>
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <h5>
+                  Links
+               </h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <a href="#">Quem somos</a>
+                  </li>
+                  <li>
+                     <a href="#">Guia do desenvolvedor</a>
+                  </li>
+                  <li>
+                     <a href="#">Guia do projeto social</a>
+                  </li>
+                  <li>
+                     <a href="#">Juntos+</a>
+                  </li>
+                  <li>
+                     <a href="#">Dúvidas</a>
+                  </li>
+               </ul>
+            </div>
 
-    <script src="assets/js/jquery-3.3.1.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/script.js"></script>  
+            <div class="col-lg-6">
+               <h5>
+                  Informações de contato
+               </h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <i class="fas fa-university"></i> Fundação Mission App
+                  </li>
+                  <li>
+                     <i class="fas fa-phone"></i> +55 11 99999-9999
+                  </li>
+                  <li>
+                     <i class="fas fa-envelope"></i>
+                     <a href="mailto:">
+                        contato@missionapp.com.br
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
